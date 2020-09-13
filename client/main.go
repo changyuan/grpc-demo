@@ -15,8 +15,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	prodClient := services.NewProdServiceClient(conn)
-	prodRes, err := prodClient.GetProdStock(context.Background(), &services.ProdRequest{ProdId: 2})
+	prodClient := services.NewProductServiceClient(conn)
+	prodRes, err := prodClient.GetProdStock(context.Background(), &services.ProductRequest{ProdId: 2})
 
 	if err != nil {
 		log.Fatal(err)

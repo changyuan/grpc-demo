@@ -9,7 +9,7 @@ import (
 
 func main() {
 	rpcServer := grpc.NewServer()
-	services.RegisterProdServiceServer(rpcServer, new(services.ProdService))
+	services.RegisterProductServiceServer(rpcServer, new(services.ProductService))
 
 	listen, _ := net.Listen("tcp", ":8081")
 
