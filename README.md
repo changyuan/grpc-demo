@@ -3,7 +3,7 @@
 
 ```bash
 cd pbfiles
-protoc --go_out=plugins=grpc:../services Prod.proto
+protoc --go_out=plugins=grpc:../services Product.proto
 
 
 # run server
