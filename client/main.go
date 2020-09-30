@@ -14,6 +14,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer conn.Close()
 
 	prodClient := services.NewProductServiceClient(conn)
 	prodRes, err := prodClient.GetProdStock(context.Background(), &services.ProductRequest{ProdId: 2})
