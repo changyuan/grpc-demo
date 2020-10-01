@@ -14,4 +14,7 @@ message ProductResponse {
 
 service ProductService {
     rpc GetProdStock (ProductRequest) returns (ProductResponse);
+
+    rpc listFeature(ProductRequest) returns (stream ProductResponse);
+
 }
