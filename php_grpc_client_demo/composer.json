@@ -1,0 +1,23 @@
+{
+    "name": "administrator/php_grpc_client_demo",
+    "description": "this is a use grpc-php-client demo",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "changyuanyuan",
+            "email": "changocean@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "grpc/grpc": "^1.30",
+        "google/protobuf": "v3.13.0.1"
+    },
+    "autoload":{
+        "psr-4":{
+          "GPBMetadata\\":"GPBMetadata/",
+          "Services\\":"Services/"
+        }
+   }
+}
